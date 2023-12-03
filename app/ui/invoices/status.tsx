@@ -4,6 +4,7 @@ import clsx from 'clsx';
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
+      // MEMO: 条件付きでクラスを付与する。
       className={clsx(
         'inline-flex items-center rounded-full px-2 py-1 text-xs',
         {
