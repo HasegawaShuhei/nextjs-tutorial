@@ -13,6 +13,8 @@ export default function Search({ placeholder }: { placeholder: string }) {
     console.log(`Searching... ${term}`);
     // ?page=1&query=aのようなparams文字列を取得できます。
     const params = new URLSearchParams(searchParams);
+    // デフォルトのページ設定
+    params.set('page', '1');
     if (term) {
       params.set('query', term);
     } else {
