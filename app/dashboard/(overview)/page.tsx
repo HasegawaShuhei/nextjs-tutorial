@@ -34,7 +34,7 @@ export default async function Page() {
         />
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        {/* Suspenseを使うことで取得に時間がかかるrevenueの取得中、個別にローディングを表示する */}
+        {/* MEMO: Suspenseを使うことで取得に時間がかかるrevenueの取得中、個別にローディングを表示する */}
         <Suspense fallback={<RevenueChartSkeleton />}>
           <RevenueChart />
         </Suspense>
